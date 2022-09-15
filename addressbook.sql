@@ -45,3 +45,7 @@ UPDATE address_book set type = "friend" WHERE first_name = "satish";
 UPDATE address_book set type = "profession" WHERE first_name = "rohit";
 UPDATE address_book set type = "profession" WHERE first_name = "virat";
 SELECT first_name FROM address_book WHERE type = "friend";
+
+#UC10 : ability to get number of contact persons i.e.count by type
+
+SELECT type, Count(type) FROM address_Book GROUP BY type;
