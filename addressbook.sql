@@ -36,3 +36,12 @@ UPDATE address_book set address = "pqr" WHERE first_name = "virat";
  
  SELECT * FROM address_book WHERE city = "pune" ORDER BY first_name;
  
+ #UC9 : Ability to identify each address book with name and type
+ 
+ ALTER TABLE address_book ADD type VARCHAR(150) AFTER last_name;
+UPDATE address_book set type = "friend" WHERE first_name = "amit";
+UPDATE address_book set type = "family" WHERE first_name = "amol";
+UPDATE address_book set type = "friend" WHERE first_name = "satish";
+UPDATE address_book set type = "profession" WHERE first_name = "rohit";
+UPDATE address_book set type = "profession" WHERE first_name = "virat";
+SELECT first_name FROM address_book WHERE type = "friend";
