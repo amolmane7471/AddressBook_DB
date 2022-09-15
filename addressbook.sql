@@ -10,4 +10,8 @@ CREATE TABLE address_book(first_name VARCHAR(255)NOT NULL,last_name VARCHAR(255)
                          state VARCHAR(255)NOT NULL,zip VARCHAR(150)NOT NULL,
                          phone_number VARCHAR(150)NOT NULL,email VARCHAR(255)NOT NULL);  
 
+#UC3 : ability to insert data into table
+
+INSERT INTO address_book VALUES('amol','mane','xyz','pune',
+								'maharashtra','78454','874545412','amolmane@gmail.com');
 
