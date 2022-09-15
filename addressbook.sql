@@ -31,3 +31,8 @@ UPDATE address_book set address = "pqr" WHERE first_name = "virat";
  #UC7 : ability to understand the size of addressBook by city and state
  
  SELECT COUNT(first_name) FROM address_book GROUP BY city,state;
+ 
+ #UC8 : ability to retrieve entries sorted alphabetically by person name
+ 
+ SELECT * FROM address_book WHERE city = "pune" ORDER BY first_name;
+ 
