@@ -23,3 +23,7 @@ UPDATE address_book set address = "pqr" WHERE first_name = "virat";
  #UC5 : Ability to delete person using person name
  
  DELETE FROM address_book WHERE first_name = "rohit";
+ 
+ #UC6 : ability retrieve person belonging to a city or state
+ 
+ SELECT first_name FROM address_book WHERE city = "Delhi" OR state = "New Delhi";
