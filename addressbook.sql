@@ -19,4 +19,7 @@ INSERT INTO address_book VALUES('amol','mane','xyz','pune','maharashtra','78454'
 #UC4 : Ability To Edit existing Contact
 
 UPDATE address_book set address = "pqr" WHERE first_name = "virat";
-                                
+						
+ #UC5 : Ability to delete person using person name
+ 
+ DELETE FROM address_book WHERE first_name = "rohit";
