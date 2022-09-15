@@ -27,3 +27,7 @@ UPDATE address_book set address = "pqr" WHERE first_name = "virat";
  #UC6 : ability retrieve person belonging to a city or state
  
  SELECT first_name FROM address_book WHERE city = "Delhi" OR state = "New Delhi";
+ 
+ #UC7 : ability to understand the size of addressBook by city and state
+ 
+ SELECT COUNT(first_name) FROM address_book GROUP BY city,state;
